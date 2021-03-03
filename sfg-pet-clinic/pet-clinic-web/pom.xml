@@ -7,6 +7,8 @@
   </parent>
   <artifactId>pet-clinic-web</artifactId>
   
+  <name>pet-clinic-web</name>
+  
   <properties>
   	<!-- Web dependencies -->
     <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
@@ -14,8 +16,6 @@
     <webjars-jquery.version>2.2.4</webjars-jquery.version>
     <wro4j.version>1.8.0</wro4j.version>
   </properties>
-  
-  <name>pet-clinic-web</name>
   
   <dependencies>
   	<dependency>
@@ -36,7 +36,19 @@
     	<version>0.0.1-SNAPSHOT</version>
 	</dependency>
 	
-	<!-- webjars -->
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+	</dependency>
+	
+	 <!-- webjars -->
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>webjars-locator-core</artifactId>
@@ -58,23 +70,11 @@
     </dependency>
     <!-- end of webjars -->
 	
-	<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-	</dependency>
-	
   </dependencies>
   
-  <build>
-  <plugins>
-  	<plugin>
+<build>
+  	<plugins>
+  		<plugin>
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
         <version>${wro4j.version}</version>
@@ -106,7 +106,7 @@
           </dependency>
         </dependencies>
       </plugin>
-      </plugins>
+  	</plugins>
   </build>
   
 </project>
