@@ -14,8 +14,8 @@ import ptrmarcowski.springframework.sfgpetclinic.services.OwnerService;
 import ptrmarcowski.springframework.sfgpetclinic.services.PetTypeService;
 import ptrmarcowski.springframework.sfgpetclinic.services.SpecialityService;
 import ptrmarcowski.springframework.sfgpetclinic.services.VetService;
-import ptrmarcowski.springframework.sfgpetclinic.services.map.OwnerServiceMap;
-import ptrmarcowski.springframework.sfgpetclinic.services.map.VetServiceMap;
+import ptrmarcowski.springframework.sfgpetclinic.services.map.OwnerMapService;
+import ptrmarcowski.springframework.sfgpetclinic.services.map.VetMapService;
 
 @Component
 public class DataLoader implements CommandLineRunner{
