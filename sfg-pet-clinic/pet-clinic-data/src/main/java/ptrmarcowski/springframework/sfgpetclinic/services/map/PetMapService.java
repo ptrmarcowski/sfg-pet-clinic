@@ -2,6 +2,7 @@ package ptrmarcowski.springframework.sfgpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import ptrmarcowski.springframework.sfgpetclinic.model.Pet;
@@ -9,6 +10,7 @@ import ptrmarcowski.springframework.sfgpetclinic.services.CrudService;
 import ptrmarcowski.springframework.sfgpetclinic.services.PetService;
 
 @Service
+@Profile({"default", "map"})
 public class PetMapService extends AbstractMapService<Pet, Long> implements //CrudService<Pet, Long>//{
 PetService {
 
